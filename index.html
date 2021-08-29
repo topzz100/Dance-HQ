@@ -12,10 +12,45 @@
     <div class="header">
       <div class="logo">
         <h3>Dance <span> hq</span></h3>
-        <div class="toggleMenu"></div>
+      </div>  
+      <div class="toggleMenu"></div>
+     
+      
+    </div>  
+    <video src="video1.mp4" autoplay muted loop></video>
+    <div class="overlay"></div>
+
+    <div class="text">
+      <h2>dance</h2>
+      <h3>with us</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, cum? Ut fugiat nostrum error, cumque mollitia delectus asperiores inventore est! Maxime, cum? Ut fugiat nostrum error, cumque </p>
+      <a href="">see more</a>
+
       </div>
-    </div>
+      <ul class="socials">
+        <li><a href="#"><img src="facebook.png" alt=""></a></li>
+        <li><a href="#"><img src="twitter.png" alt=""></a></li>
+        <li><a href="#"><img src="instagram.png" alt=""></a></li>
+      </ul>
+  
+  </div>
+  <div class="menu">
+    <ul> 
+      <li><a href="#">sign in</a></li>
+      <li><a href="#">log in</a></li>
+      <li><a href="#">about us</a></li>
+      <li><a href="#">contact us</a></li>
+    </ul>
   </div>
   
+  <script>
+    const content =document.querySelector('.content');
+    const toggleMenu =document.querySelector('.toggleMenu');
+
+    toggleMenu.addEventListener('click', () => {
+      content.classList.toggle("active");
+      toggleMenu.classList.toggle("active");
+    })
+  </script>
 </body>
 </html>
